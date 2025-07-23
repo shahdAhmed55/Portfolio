@@ -1,0 +1,18 @@
+$second-color:#09fbff ;
+$main-color : #191834;
+$third-color:#5b146f;
+$text-color-light: #09fbff;
+$text-color-dark: #191834;
+$text-color-white:white;
+@mixin center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+@mixin bgForLaptop{
+      background-image: linear-gradient(-20deg , $main-color , #2b2c68 , #338aca ,  #338aca  , $main-color , #2b2c68 );
+}
+@mixin bgForPhone{
+      background-image: linear-gradient(3deg , $main-color  , #2b2c68 , #5b146f,#338aca , #5b146f,#2b2c68 ,#338aca );
+}

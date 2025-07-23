@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ! header -->
+    <section class="header" id="header">
+        <!-- ! open navbar btn -->
+        <span class="open-btn hide" onclick="openNavBar()">
+            <div class="color">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </span>
+
+        <div class="mouse"></div>
+        <nav>
+            <!-- ! nav bar -->
+            <div class="nav-bar">
+                <!-- ! close navbar btn -->
+                <span class="close-btn " onclick="closeNavBar()">
+                    <div class="color">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </span>
+                <!-- ! ul -->
+                <ul>
+                    <li><a href="#header"><div class="scroll-animation"></div>home</a></li>
+                    <li> <a href="#introdaction"><div></div>introdaction</a> </li>
+                    <li> <a href="#projects-page"><div></div>My Projects</a></li>
+                    <li> <a href="#contact-page"><div></div>Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="content">
+            <div class="container">
+                <div class="my-name">
+                    <h1 class="name">Shahd Ahmed Abdelwahab</h1>
+                    <span class="my-career">
+                        Front End Developer
+                    </span>
+                </div>
+                <div class="icons">
+                    <a href="https://github.com/shahdAhmed55" target="_self">
+                        <img src="./icons/github.png" width="40px" alt="">
+                    </a>
+                    <a href="https://www.linkedin.com/in/shahd-ahmed-abdelwahab-507110288/" target="_self">
+                        <img src="./icons/linkedin.png" width="40px" alt="">
+                    </a>
+                </div>
+                <div class="btns">
+                    <a href="#contact-page">
+                        <button>Contact</button>
+                    </a>
+                    <a href="#projects-page">
+                        <button class="works">my works</button>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ! introdaction section -->
+    <section class="introdaction" id="introdaction">
+        <div class="container">
+            <div class="title introdaction">
+                <h1>Who Am I ?
+                </h1>
+                <span>Let me introduce Myself</span>
+            </div>
+            <div class="content">
+                <div class="box introduce-me">
+                    <h1>Who Am I ?</h1>
+                    <span>
+                        <p>Hello! My name is Shahd, I'm a third-year Computer Science student. I am a front-end developer, and I've built several websites using JavaScript. I'm always looking to continuously improve my skills and stay updated with the latest technologies in the field.</p>
+                        <img src="./photo/rebotpng.png" alt="">
+                    </span>
+                </div>
+                <div class="box my-infos">
+                    <h1>Contact</h1>
+                    <span>
+                        <span class="mp my-email">
+                            <img src="./photo/gmail.png" alt="">
+                            <a href="mailto:shahdahmed00001111@gmail.com">
+                                <p>Shahd Ahmed</p>
+                            </a>
+                        </span>
+                        <span class="mp my-address">
+                            <img src="./photo/location-pin.png" alt="">
+                            <p>Hurghada, Redsea, Egypt</p>
+                        </span>
+                        <span class="mp my-phone">
+                            <img src="./photo/telephone.png" alt="">
+                            <a href="https://wa.me/message/ZFY3HCGKU3CZA1">
+                                <p>WhatsApp</p>
+                            </a>
+                        </span>
+                    </span>
+                </div>
+                <div class="box edu-me">
+                    <h1>Education</h1>
+                    <span>
+                        <p>2023 - 2027(Expected)</p>
+                        <h4>South Valley National university</h4>
+                        <p>Bachelor of computer science and ai</p>
+                    </span>
+                </div>
+                <div class="box skills" data-width="90%">
+                    <h1>Skills & Tools</h1>
+                    <span class="skills-down"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- !project section -->
+    <section class="projects-page" id="projects-page">
+        <div class="container">
+            <div class="title-filter-bar">
+                <div class="title projects-page">
+                    <h1>My Projects</h1>
+                    <span>Have a look at my Projects</span>
+                </div>
+                <div class="filter-bar">
+                    <button class="filterBtn" type="button" id="All">All</button>
+                    <button class="filterBtn" type="button" id="CSS">html&css</button>
+                    <button class="filterBtn" type="button" id="SCSS">html&scss</button>
+                    <button class="filterBtn" type="button" id="JS" ">js</button>
+                </div>
+            </div>
+            <div class=" projects">
+                        <div class="boxes"></div>
+                </div>
+            </div>
+    </section>
+    <!-- ! contact section -->
+    <section class="contact-page" id="contact-page">
+        <div class="container">
+            <div class="title contact-page">
+                <h1>Contact</h1>
+                <span>contact with me</span>
+            </div>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="f3f1f184-561f-4935-9edf-8fbdcd57d0e6">
+                <label id="label" for="name">Name :</label><br>
+                <input type="text" id="name"  name="name" required><br><br>
+                <label id="label" for="email">Email :</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label id="label" for="message">Message :</label><br>
+                <textarea id="message" name="message" required></textarea><br><br>
+                <button id="email-submit-btn" type="submit">submit</button>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
