@@ -3,12 +3,14 @@ body {
   float: right;
   transition: 0.5s;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: linear-gradient(-20deg, #191834, #2b2c68, #338aca, #338aca, #191834, #2b2c68);
+  background-image: radial-gradient(circle at top right, #1e1b4b, #0f172a, #000000);
+  background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 @media (max-width: 787px) {
   body {
-    background-image: linear-gradient(3deg, #191834, #2b2c68, #5b146f, #338aca, #5b146f, #2b2c68, #338aca);
+    background-image: linear-gradient(180deg, #0f172a 0%, #1e1b4b 50%, #0f172a 100%);
   }
   .header .my-name .name {
     font-size: 35px;
@@ -21,7 +23,7 @@ body {
 
 .header {
   cursor: none;
-  color: #09fbff;
+  color: #00f5ff;
 }
 .header .open-btn {
   transition: 0.5s;
@@ -29,7 +31,7 @@ body {
   position: fixed;
   top: 20px;
   left: 5%;
-  background-image: linear-gradient(-20deg, #191834, #2b2c68);
+  background-image: linear-gradient(-20deg, #0f172a, #2b2c68);
   box-shadow: 3px 4px 0 #338aca;
   padding: 12px 10px;
   border-radius: 5px;
@@ -82,7 +84,7 @@ body {
   top: 20px;
   right: 20px;
   background-image: linear-gradient(-20deg, #338aca, #26b7cd);
-  box-shadow: 3px 4px 0 #191834;
+  box-shadow: 3px 4px 0 #0f172a;
   padding: 16px 6px;
   transform: rotate(45deg);
 }
@@ -150,7 +152,7 @@ body {
   transition: 0.5s;
 }
 .header nav .nav-bar ul li a:hover div {
-  background-color: #09fbff;
+  background-color: #00f5ff;
   animation: anime 0.8s 1 ease;
   height: 3px;
   z-index: -1;
@@ -160,7 +162,7 @@ body {
   width: 90%;
 }
 .header nav .nav-bar ul li a .scroll-animation {
-  background-color: #09fbff;
+  background-color: #00f5ff;
   animation: anime 0.8s 1 ease;
   height: 3px;
   z-index: -1;
@@ -231,14 +233,15 @@ body {
 .introdaction .container .content h1 {
   position: absolute;
   top: -20px;
-  color: #09fbff;
+  color: #00f5ff;
 }
 .introdaction .container .content .box {
   position: relative;
   border-radius: 20px;
-  background-color: #191834;
+  background-color: #0f172a;
   padding: 15px;
-  color: white;
+  color: #f8fafc;
+  border: 1px solid rgba(148, 163, 184, 0.2);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -300,7 +303,7 @@ body {
   top: 0;
   left: 0;
   width: 90%;
-  background-color: #09fbff;
+  background-color: #00f5ff;
   height: 100%;
 }
 
@@ -343,11 +346,16 @@ body {
   gap: 1.75%;
 }
 .projects-page .container .projects .boxes .box {
-  box-shadow: #191834 0 0 25px;
+  box-shadow: #0f172a 0 0 25px;
+  background-color: rgba(30, 41, 59, 0.4);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(0, 245, 255, 0.1);
+  border-radius: 15px;
   width: 49%;
   transition: 0.5s;
   margin-bottom: 1.75%;
-  background-color: #191834;
+  background-color: #0f172a;
   border-radius: 10px;
   overflow: hidden;
   border-radius: 20px;
@@ -365,7 +373,7 @@ body {
   }
 }
 .projects-page .container .projects .boxes .box .img {
-  background-color: #191834;
+  background-color: #0f172a;
   padding: 10px;
   overflow: hidden;
   position: relative;
@@ -400,7 +408,7 @@ body {
 .projects-page .container .projects .boxes .box .project-infos .tools {
   margin-top: 10px;
   font-size: 12px;
-  color: #5b146f;
+  color: rgba(248, 250, 252, 0.2);
   font-weight: bold;
   font-weight: 16px;
   padding: 5px 5px;
@@ -441,11 +449,13 @@ body {
   border-radius: 5px;
   font-weight: bold;
   font-size: 18px;
-  color: #09fbff;
+  background-color: rgba(30, 41, 59, 0.6);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  color: #f8fafc;
 }
 .contact-page .container form input:hover,
 .contact-page .container form textarea:hover {
-  box-shadow: 0 0 10px #191834;
+  box-shadow: 0 0 10px #0f172a;
 }
 .contact-page .container form #label {
   color: white;
@@ -463,22 +473,22 @@ body {
 }
 
 .active {
-  background-color: #191834;
+  background-color: #0f172a;
   color: white;
-  box-shadow: 0 4px 0 #191834;
+  box-shadow: 0 4px 0 #0f172a;
 }
 
 button {
   overflow: hidden;
   position: relative;
-  background-color: #09fbff;
+  background-color: #00f5ff;
   padding: 15px 20px;
   border-radius: 5px;
-  border: 0;
-  color: #191834;
+  border: 1.5px solid rgba(0, 245, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0, 245, 255, 0.3);
+  color: #0f172a;
   overflow: hidden;
   transition: 1s;
-  box-shadow: 0 4px 0 #191834;
   font-weight: bold;
   cursor: none;
 }
@@ -493,12 +503,11 @@ button::after {
   transform: skew(20deg);
 }
 button:hover {
-  color: #09fbff;
-  box-shadow: 0 4px 0 #191834;
-  background-color: #191834;
+  color: #00f5ff;
+  background-color: #0f172a;
 }
 button:hover::after {
-  background-color: #09fbff;
+  background-color: #00f5ff;
   width: 50%;
   right: 150%;
 }
@@ -524,7 +533,7 @@ button:hover::after {
   font-size: 60px;
   text-align: center;
   -webkit-text-stroke: 1px transparent;
-  background-image: linear-gradient(to right, #09fbff);
+  background-image: linear-gradient(to right, #00f5ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -537,7 +546,7 @@ button:hover::after {
 .title span,
 .my-name span {
   color: white;
-  text-shadow: 0 0 5px #191834;
+  text-shadow: 0 0 5px #0f172a;
   font-weight: bold;
   font-size: 21px;
   transform: translateY(-30px);
@@ -567,28 +576,28 @@ button:hover::after {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #09fbff;
+  background-color: #00f5ff;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #191834;
+  background-color: #0f172a;
   border-radius: 20px;
 }
 
 ::-moz-selection {
-  background-color: #09fbff;
+  background-color: #00f5ff;
   color: white;
 }
 
 ::selection {
-  background-color: #09fbff;
+  background-color: #00f5ff;
   color: white;
 }
 
 .mouse {
   width: 20px;
   height: 20px;
-  background-color: #09fbff;
+  background-color: #00f5ff;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -597,5 +606,9 @@ button:hover::after {
   border-radius: 100%;
   scroll-behavior: smooth;
   pointer-events: none;
-  box-shadow: 0 0 10px #191834;
+  box-shadow: 0 0 10px #0f172a;
+}
+
+.icon img {
+  width: 24px;
 }/*# sourceMappingURL=main.css.map */
