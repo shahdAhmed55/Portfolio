@@ -50,7 +50,7 @@ let projects = {
       num: 7,
       name: "jinStore",
       img: "./photo/js-project3.png",
-      language: "js",
+      language: "JS",
       link: "https://shahdahmed55.github.io/Ecommerce-Project/",
       tools: "HTML | CSS | JS ",
       codeOnGit: "https://github.com/shahdAhmed55/Ecommerce-Project",
