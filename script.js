@@ -382,6 +382,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     opacity:0,
     x: 10,
     stagger: .2,
-    repeat:1,
+    repeat:-1,
   })
 })
