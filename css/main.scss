@@ -196,6 +196,8 @@ body {
 
   .content {
     .container {
+          position: relative;
+  
       overflow: hidden;
 
       .icons {
@@ -214,6 +216,12 @@ body {
       width: 100%;
       @include center;
       flex-direction: column;
+
+      .cv{
+        position: fixed;
+        z-index: 11111;
+        top: 0;
+      }
     }
   }
 }
@@ -515,7 +523,7 @@ body {
 }
 
 //! buttons style
-button {
+.btn {
   overflow: hidden;
   position: relative;
   background-color: $second-color;

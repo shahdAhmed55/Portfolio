@@ -186,6 +186,7 @@ body {
   }
 }
 .header .content .container {
+  position: relative;
   overflow: hidden;
 }
 .header .content .container .icons {
@@ -209,6 +210,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+.header .content .container .cv {
+  position: fixed;
+  z-index: 11111;
+  top: 0;
 }
 
 .introdaction {
@@ -499,7 +505,7 @@ body {
   box-shadow: 0 4px 0 #0f172a;
 }
 
-button {
+.btn {
   overflow: hidden;
   position: relative;
   background-color: #00f5ff;
@@ -513,7 +519,7 @@ button {
   font-weight: bold;
   cursor: none;
 }
-button::after {
+.btn::after {
   transition: 0.8s;
   position: absolute;
   top: 0;
@@ -523,11 +529,11 @@ button::after {
   content: "";
   transform: skew(20deg);
 }
-button:hover {
+.btn:hover {
   color: #00f5ff;
   background-color: #0f172a;
 }
-button:hover::after {
+.btn:hover::after {
   background-color: #00f5ff;
   width: 50%;
   right: 150%;
