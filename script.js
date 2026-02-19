@@ -3,7 +3,6 @@ let body = document.querySelector("body");
 let openNavBarBtn = document.querySelector(".open-btn");
 let closeNavBarBtn = document.querySelector(".close-btn");
 
-
 if (screen.width <= 767) {
   navBar.style.left = "-100%";
   body.style.width = 100 + "%";
@@ -37,35 +36,35 @@ function openNavBar() {
   });
 }
 
-
 // mouse cursor
 let mouse = document.querySelector(".mouse");
-window.addEventListener('mousemove',(e)=>{
-   mouse.style.top = e.pageY+"px";
-     mouse.style.left = e.pageX +"px";
-})
-
+window.addEventListener("mousemove", (e) => {
+  mouse.style.top = e.pageY + "px";
+  mouse.style.left = e.pageX + "px";
+});
 
 // my projects array
 let projects = {
   data: [
-         {
+    {
       num: 5,
       name: "Movie Website",
       img: "./photo/movieWebSite.png",
       language: "JS",
       link: "https://shahdahmed55.github.io/Movie-Website/",
       tools: "HTML | SCSS | js",
-      codeOnGit: "https://github.com/shahdAhmed55/Movie-Website?tab=readme-ov-file",
+      codeOnGit:
+        "https://github.com/shahdAhmed55/Movie-Website?tab=readme-ov-file",
     },
-       {
+    {
       num: 6,
       name: "Youtube Thumbnails Downloader",
       img: "./photo/youtubeDownload.png",
       language: "JS",
       link: "https://shahdahmed55.github.io/Youtube-Thumbnails-downloader/",
       tools: "HTML | css | js",
-      codeOnGit: "https://github.com/shahdAhmed55/Youtube-Thumbnails-downloader",
+      codeOnGit:
+        "https://github.com/shahdAhmed55/Youtube-Thumbnails-downloader",
     },
     {
       num: 0,
@@ -119,7 +118,6 @@ let projects = {
       tools: "HTML | SCSS",
       codeOnGit: "https://github.com/shahdAhmed55/second-sass-template",
     },
-    
   ],
 };
 
@@ -155,9 +153,6 @@ function createBox() {
   projectContainer.innerHTML += projectContent;
 }
 
-
-
-
 // add create box function to each project in projects array
 for (project of projects.data) {
   createBox();
@@ -181,8 +176,7 @@ function findBox(filterBtn) {
   });
 }
 
-
-// filter btn on click 
+// filter btn on click
 filterBtns.forEach((filterBtn) => {
   filterBtn.addEventListener("click", () => {
     activeBtn();
@@ -212,12 +206,10 @@ function activeBtn() {
   });
 }
 
-// 
+//
 pagesTitles.forEach((projectTitle) => {
   projectTitle.style.transform = "translateX(-400%)";
 });
-
-
 
 // animation onscroll
 window.onscroll = () => {
@@ -280,7 +272,6 @@ lis.forEach((li) => {
   }
 });
 
-
 // show hithub icon when hover any project
 
 boxes.forEach((box, i) => {
@@ -313,27 +304,32 @@ let skills = {
     {
       language: "html",
       progress: "90%",
+      img: "./photo/skills&lagueges/html-5.png",
     },
     {
       language: "CSS",
       progress: "85%",
+      img: "./photo/skills&lagueges/css-3.png",
     },
     {
       language: "SASS",
       progress: "82%",
+      img: "./photo/skills&lagueges/sass.png",
     },
     {
       language: "C++",
       progress: "75%",
+      img: "./photo/skills&lagueges/c-.png",
     },
     {
       language: "JS",
       progress: "69%",
+      img: "./photo/skills&lagueges/js.png",
     },
-     {
-      language: "Tailwind",
-      progress: "59%",
-    },
+    // {
+    //   language: "Tailwind",
+    //   progress: "59%",
+    // },
   ],
 };
 
@@ -348,8 +344,9 @@ function addSkill(skill) {
   skillsContainer.append(skillcontainerDiv);
 
   let skillContent = `
-       
-          <span>${skill.language}</span>
+          <div class="skill-name-img">
+                  <img class="skill-img" src="${skill.img}"></img>
+          </div>
           <div class="timeLine">
                 <span class="progress" style= "width:${skill.progress}"></span>
           </div>
@@ -358,4 +355,3 @@ function addSkill(skill) {
   `;
   skillcontainerDiv.innerHTML = skillContent;
 }
-
