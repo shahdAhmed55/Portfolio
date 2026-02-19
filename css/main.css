@@ -214,7 +214,13 @@ body {
 .header .content .container .cv {
   position: fixed;
   z-index: 11111;
-  top: 0;
+  top: 20px;
+  background-color: #0f172a;
+  color: #00f5ff;
+}
+.header .content .container .cv:hover {
+  background-color: #00f5ff;
+  color: #0f172a;
 }
 
 .introdaction {

@@ -196,8 +196,8 @@ body {
 
   .content {
     .container {
-          position: relative;
-  
+      position: relative;
+
       overflow: hidden;
 
       .icons {
@@ -217,10 +217,16 @@ body {
       @include center;
       flex-direction: column;
 
-      .cv{
+      .cv {
         position: fixed;
         z-index: 11111;
-        top: 0;
+        top: 20px;
+        background-color: $main-color;
+        color: $text-color-light;
+        &:hover {
+          background-color: $second-color;
+          color: $text-color-dark;
+        }
       }
     }
   }
@@ -319,7 +325,7 @@ body {
                   width: 100%;
                 }
               }
-              span{
+              span {
                 font-size: 12px;
               }
             }
