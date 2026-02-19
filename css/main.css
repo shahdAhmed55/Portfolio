@@ -295,7 +295,7 @@ body {
   gap: 20px;
 }
 .introdaction .container .content .box.skills .skill .skill-name-img {
-  width: 10%;
+  width: 50px;
   text-align: center;
 }
 .introdaction .container .content .box.skills .skill .skill-name-img .skill-img {

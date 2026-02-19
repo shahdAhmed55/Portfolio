@@ -47,6 +47,15 @@ window.addEventListener("mousemove", (e) => {
 let projects = {
   data: [
     {
+      num: 7,
+      name: "jinStore",
+      img: "./photo/js-project3.png",
+      language: "js",
+      link: "https://shahdahmed55.github.io/Ecommerce-Project/",
+      tools: "HTML | CSS | JS ",
+      codeOnGit: "https://github.com/shahdAhmed55/Ecommerce-Project",
+    },
+    {
       num: 5,
       name: "Movie Website",
       img: "./photo/movieWebSite.png",
@@ -66,6 +75,7 @@ let projects = {
       codeOnGit:
         "https://github.com/shahdAhmed55/Youtube-Thumbnails-downloader",
     },
+
     {
       num: 0,
       name: "Wooster",
