@@ -52,7 +52,7 @@ let projects = {
       img: "./photo/js-project3.png",
       language: "JS",
       link: "https://shahdahmed55.github.io/Ecommerce-Project/",
-      tools: "HTML | CSS | JS ",
+      tools: "HTML | CSS | JS",
       codeOnGit: "https://github.com/shahdAhmed55/Ecommerce-Project",
     },
     {
