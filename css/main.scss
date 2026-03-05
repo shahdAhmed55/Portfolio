@@ -5,8 +5,8 @@ body {
   float: right;
   transition: 0.5s;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  @include bgForLaptop;
   // position: relative;
-  background-color:#2b2c68;
   overflow-x: hidden;
 }
 
@@ -28,16 +28,13 @@ body {
 
 //! header
 .header {
-  background-image: url("https://kimetsu.com/anime/mugenresshahen_movie/assets/img/bg_smoke_blue.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  
+  // background-image: url("https://kimetsu.com/anime/mugenresshahen_movie/assets/img/bg_smoke_blue.png");
+  // background-position: center;
+  // background-size: cover;
+  // background-repeat: no-repeat;
   cursor: none;
   color: $text-color-light;
   .open-btn {
-    @include bgForLaptop;
-
     @media (max-width: 787px) {
       left: 9%;
     }
@@ -46,7 +43,7 @@ body {
     position: fixed;
     top: 20px;
     left: 5%;
-    // background-image: linear-gradient(-20deg, $main-color, #2b2c68);
+    background-image: linear-gradient(-20deg, $main-color, #2b2c68);
     box-shadow: 3px 4px 0 #338aca;
     padding: 12px 10px;
     border-radius: 5px;
@@ -79,8 +76,7 @@ body {
     @media (min-width: 787px) {
       box-shadow: 0 0 40px #2b2c68;
     }
-    @include bgForLaptop;
-
+    background-color: #2b2c68;
     backdrop-filter: blur(10px);
     transition: 0.5s;
     .nav-bar {
@@ -93,7 +89,7 @@ body {
         border-radius: 5px;
         top: 20px;
         right: 20px;
-        // background-image: linear-gradient(-20deg, #338aca, #26b7cd);
+        background-image: linear-gradient(-20deg, #338aca, #26b7cd);
         box-shadow: 3px 4px 0 $main-color;
         padding: 16px 6px;
         transform: rotate(45deg);
@@ -128,7 +124,7 @@ body {
         text-align: center;
         li {
           transition: 0.5s;
-          // box-shadow: 0 0 40px #2b2c68;
+          box-shadow: 0 0 40px #2b2c68;
           width: 97%;
           padding: 10px;
           padding-left: 20px;
@@ -242,7 +238,6 @@ body {
 
 //! introdaction page
 .introdaction {
-  @include bgForLaptop;
   padding: 50px 0;
   .container {
     width: 90%;
@@ -368,8 +363,6 @@ body {
   padding: 50px 0;
   overflow: hidden;
   position: relative;
-  @include bgForLaptop;
-
   .container {
     width: 90%;
     @media (max-width: 787px) {
@@ -483,8 +476,6 @@ body {
 
 //! contact section
 .contact-page {
-  @include bgForLaptop;
-
   .container {
     width: 90%;
     height: 100vh;
@@ -580,9 +571,6 @@ body {
 //! title styles
 .title,
 .my-name {
-  // @include bgForLaptop;
-  background-color: transparent;
-
   margin-bottom: 10px;
 
   @media (max-width: 787px) {

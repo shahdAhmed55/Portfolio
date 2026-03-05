@@ -3,7 +3,8 @@ body {
   float: right;
   transition: 0.5s;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #2b2c68;
+  background-image: radial-gradient(circle at top right, #1e1b4b, #0f172a, #000000);
+  background-attachment: fixed;
   overflow-x: hidden;
 }
 
@@ -21,16 +22,8 @@ body {
 }
 
 .header {
-  background-image: url("https://kimetsu.com/anime/mugenresshahen_movie/assets/img/bg_smoke_blue.png");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   cursor: none;
   color: #00f5ff;
-}
-.header .open-btn {
-  background-image: radial-gradient(circle at top right, #1e1b4b, #0f172a, #000000);
-  background-attachment: fixed;
 }
 @media (max-width: 787px) {
   .header .open-btn {
@@ -43,6 +36,7 @@ body {
   position: fixed;
   top: 20px;
   left: 5%;
+  background-image: linear-gradient(-20deg, #0f172a, #2b2c68);
   box-shadow: 3px 4px 0 #338aca;
   padding: 12px 10px;
   border-radius: 5px;
@@ -75,8 +69,7 @@ body {
   }
 }
 .header nav {
-  background-image: radial-gradient(circle at top right, #1e1b4b, #0f172a, #000000);
-  background-attachment: fixed;
+  background-color: #2b2c68;
   backdrop-filter: blur(10px);
   transition: 0.5s;
 }
@@ -91,6 +84,7 @@ body {
   border-radius: 5px;
   top: 20px;
   right: 20px;
+  background-image: linear-gradient(-20deg, #338aca, #26b7cd);
   box-shadow: 3px 4px 0 #0f172a;
   padding: 16px 6px;
   transform: rotate(45deg);
@@ -125,6 +119,7 @@ body {
 }
 .header nav .nav-bar ul li {
   transition: 0.5s;
+  box-shadow: 0 0 40px #2b2c68;
   width: 97%;
   padding: 10px;
   padding-left: 20px;
@@ -229,8 +224,6 @@ body {
 }
 
 .introdaction {
-  background-image: radial-gradient(circle at top right, #1e1b4b, #0f172a, #000000);
-  background-attachment: fixed;
   padding: 50px 0;
 }
 .introdaction .container {
@@ -350,8 +343,6 @@ body {
   padding: 50px 0;
   overflow: hidden;
   position: relative;
-  background-image: radial-gradient(circle at top right, #1e1b4b, #0f172a, #000000);
-  background-attachment: fixed;
 }
 .projects-page .container {
   width: 90%;
@@ -461,10 +452,6 @@ body {
   width: 40px;
 }
 
-.contact-page {
-  background-image: radial-gradient(circle at top right, #1e1b4b, #0f172a, #000000);
-  background-attachment: fixed;
-}
 .contact-page .container {
   width: 90%;
   height: 100vh;
@@ -560,7 +547,6 @@ body {
 
 .title,
 .my-name {
-  background-color: transparent;
   margin-bottom: 10px;
 }
 @media (max-width: 787px) {
