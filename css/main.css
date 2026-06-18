@@ -9,7 +9,7 @@ body {
 
 @media (max-width: 787px) {
   body {
-    background-image: linear-gradient(180deg, #4bb8fa 0%, #1e1b4b 50%, #4bb8fa 100%);
+    background-image: linear-gradient(-20deg, #4bb8fa, #2c5ead, #1591dc, #4bb8fa, #4bb8fa);
   }
   .header .my-name .name {
     font-size: 35px;
