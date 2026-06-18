@@ -28,10 +28,6 @@ body {
 
 //! header
 .header {
-  // background-image: url("https://kimetsu.com/anime/mugenresshahen_movie/assets/img/bg_smoke_blue.png");
-  // background-position: center;
-  // background-size: cover;
-  // background-repeat: no-repeat;
   cursor: none;
   color: $text-color-light;
   .open-btn {
@@ -419,7 +415,6 @@ body {
             margin-bottom: 10px;
           }
           .img {
-            background-color: $main-color;
             padding: 10px;
             overflow: hidden;
             position: relative;

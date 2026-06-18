@@ -368,20 +368,20 @@ function addSkill(skill) {
 
 
 
-let downloadCV = document.querySelector(".header .cv");
-console.log(downloadCV.innerHTML.length)
-setTimeout(() => {
-    downloadCV.click();
-}, 5000)
-document.addEventListener("DOMContentLoaded", (event) => {
-  gsap.registerPlugin(SplitText);
-  let split = SplitText.create(".header .cv", {
-    type: "chars, lines",
-  });
-  gsap.from(split.chars, {
-    opacity:0,
-    x: 10,
-    stagger: .2,
-    repeat:-1,
-  })
-})
+// let downloadCV = document.querySelector(".header .cv");
+// console.log(downloadCV.innerHTML.length)
+// setTimeout(() => {
+//     downloadCV.click();
+// }, 5000)
+// document.addEventListener("DOMContentLoaded", (event) => {
+//   gsap.registerPlugin(SplitText);
+//   let split = SplitText.create(".header .cv", {
+//     type: "chars, lines",
+//   });
+//   gsap.from(split.chars, {
+//     opacity:0,
+//     x: 10,
+//     stagger: .2,
+//     repeat:-1,
+//   })
+// })

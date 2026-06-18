@@ -1,37 +1,66 @@
-$second-color:#00f5ff ;
+$second-color: #00f5ff;
 // $main-color : #191834;
 // $third-color:#5b146f;
 // $text-color-light: #09fbff;
 // $text-color-dark: #191834;
 // $text-color-white:white;
-@mixin center{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-@mixin bgForLaptop{
-      background-image: linear-gradient(-20deg , $main-color , #2b2c68 , #338aca ,  #338aca  , $main-color , #2b2c68 );
-}
-@mixin bgForPhone{
-      background-image: linear-gradient(3deg , $main-color  , #2b2c68 , #5b146f,#338aca , #5b146f,#2b2c68 ,#338aca );
-}
-
-$main-color: #0f172a;
+$main-color: #4bb8fa;
 // $secondary-color: #00f5ff;
 $third-color: #1e293b;
 $accent-purple: #7c3aed;
 
-$text-color-light: #00f5ff;
+$text-color-light: white;
 $text-color-dark: #0f172a;
 $text-color-white: #f8fafc;
 $text-muted: #94a3b8;
-
-@mixin bgForLaptop {
-  background-image: radial-gradient(circle at top right, #1e1b4b, $main-color, #000000);
-  background-attachment: fixed;
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+@mixin bgForLaptop {
+  background-image: linear-gradient(
+    -20deg,
+    $main-color,
+    #2c5ead,
+    #1591dc,
+    #4bb8fa,
+    $main-color,
+  
+  );
+}
 @mixin bgForPhone {
-  background-image: linear-gradient(180deg, $main-color 0%, #1e1b4b 50%, $main-color 100%);
+  background-image: linear-gradient(
+    3deg,
+    $main-color,
+    #2b2c68,
+    #5b146f,
+    #338aca,
+    #5b146f,
+    #2b2c68,
+    #338aca
+  );
+}
+
+
+
+// @mixin bgForLaptop {
+//   background-image: radial-gradient(
+//     circle at top right,
+//     #1e1b4b,
+//     $main-color,
+//     #000000
+//   );
+//   background-attachment: fixed;
+// }
+
+
+@mixin bgForPhone {
+  background-image: linear-gradient(
+    180deg,
+    $main-color 0%,
+    #1e1b4b 50%,
+    $main-color 100%
+  );
 }
