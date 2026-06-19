@@ -39,8 +39,8 @@ body {
     position: fixed;
     top: 20px;
     left: 5%;
-    background-image: linear-gradient(-20deg, $main-color, #2b2c68);
-    box-shadow: 3px 4px 0 #338aca;
+    background-color: $main-color;
+    box-shadow: 3px 4px 0 $second-color;
     padding: 12px 10px;
     border-radius: 5px;
     transform: rotate(45deg);
@@ -70,9 +70,9 @@ body {
     transition: 0.5s;
     width: 30%;
     @media (min-width: 787px) {
-      box-shadow: 0 0 40px #2b2c68;
+      box-shadow: 0 0 40px #000000;
     }
-    background-color: #2b2c68;
+    background-color: $main-color;
     backdrop-filter: blur(10px);
     transition: 0.5s;
     .nav-bar {
@@ -85,8 +85,8 @@ body {
         border-radius: 5px;
         top: 20px;
         right: 20px;
-        background-image: linear-gradient(-20deg, #338aca, #26b7cd);
-        box-shadow: 3px 4px 0 $main-color;
+        background-color:$main-color;
+        box-shadow: 3px 4px 0 $second-color;
         padding: 16px 6px;
         transform: rotate(45deg);
         @media (max-width: 787px) {
@@ -120,7 +120,7 @@ body {
         text-align: center;
         li {
           transition: 0.5s;
-          box-shadow: 0 0 40px #2b2c68;
+          // box-shadow: 0 0 40px #2b2c68;
           width: 97%;
           padding: 10px;
           padding-left: 20px;
@@ -234,6 +234,7 @@ body {
 
 //! introdaction page
 .introdaction {
+  background-color: black; 
   padding: 50px 0;
   .container {
     width: 90%;
@@ -254,7 +255,7 @@ body {
       h1 {
         position: absolute;
         top: -20px;
-        color: $text-color-light;
+        color: $text-color-white;
       }
       .box {
         position: relative;
@@ -347,6 +348,13 @@ body {
                 height: 100%;
               }
             }
+
+            .skill-percent{
+            border: 2px solid white; 
+            border-radius:100% ;
+             padding:10px 5px;
+             color:white
+            }
           }
         }
       }
@@ -356,6 +364,7 @@ body {
 
 //! project section
 .projects-page {
+  background-color: black; 
   padding: 50px 0;
   overflow: hidden;
   position: relative;
@@ -390,8 +399,7 @@ body {
         width: 100%;
         gap: calc(3.5% / 2);
         .box {
-          box-shadow: $main-color 0 0 25px;
-          background-color: rgba($third-color, 0.4);
+          // box-shadow: $main-color 0 0 25px;
           backdrop-filter: blur(8px);
           border: 1.5px solid rgba($second-color, 0.1);
           border-radius: 15px;
@@ -404,17 +412,18 @@ body {
           width: 49%;
           transition: 0.5s;
           margin-bottom: calc(3.5% / 2);
-          background-color: $main-color;
+          background-color: $accent-purple;
           border-radius: 10px;
           overflow: hidden;
           border-radius: 20px;
-          background-color: #191834;
+          // background-color: #191834;
           color: #09fbff;
           @media (max-width: 787px) {
             width: 100%;
             margin-bottom: 10px;
           }
           .img {
+            background-color: transparent;
             padding: 10px;
             overflow: hidden;
             position: relative;
@@ -471,6 +480,7 @@ body {
 
 //! contact section
 .contact-page {
+  background-color: black;
   .container {
     width: 90%;
     height: 100vh;
@@ -531,12 +541,12 @@ body {
 .btn {
   overflow: hidden;
   position: relative;
-  background-color: $second-color;
+  background-color: $main-color;
   padding: 15px 20px;
   border-radius: 5px;
   border: 1.5px solid rgba($second-color, 0.1);
   box-shadow: 0 0 15px rgba($second-color, 0.3);
-  color: $text-color-dark;
+  color: $text-color-white;
   overflow: hidden;
   transition: 1s;
   font-weight: bold;
@@ -581,7 +591,7 @@ body {
     font-size: 60px;
     text-align: center;
     -webkit-text-stroke: 1px transparent;
-    background-image: linear-gradient(to right, $second-color);
+    background-image: linear-gradient(to right, $text-color-white);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     @media (max-width: 767px) {

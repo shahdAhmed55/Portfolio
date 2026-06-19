@@ -3,13 +3,14 @@ body {
   float: right;
   transition: 0.5s;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-image: linear-gradient(-20deg, #4bb8fa, #2c5ead, #1591dc, #4bb8fa, #4bb8fa);
+  background-image: radial-gradient(circle at top right, #000000, #4a000e, #4a000e, #000000);
+  background-attachment: fixed;
   overflow-x: hidden;
 }
 
 @media (max-width: 787px) {
   body {
-    background-image: linear-gradient(-20deg, #4bb8fa, #2c5ead, #1591dc, #4bb8fa, #4bb8fa);
+    background-image: radial-gradient(180deg, #4a000e 0%, #310007 50%, #4a000e 100%);
   }
   .header .my-name .name {
     font-size: 35px;
@@ -22,7 +23,7 @@ body {
 
 .header {
   cursor: none;
-  color: white;
+  color: #ff8080;
 }
 @media (max-width: 787px) {
   .header .open-btn {
@@ -35,8 +36,8 @@ body {
   position: fixed;
   top: 20px;
   left: 5%;
-  background-image: linear-gradient(-20deg, #4bb8fa, #2b2c68);
-  box-shadow: 3px 4px 0 #338aca;
+  background-color: #4a000e;
+  box-shadow: 3px 4px 0 #ff4d4d;
   padding: 12px 10px;
   border-radius: 5px;
   transform: rotate(45deg);
@@ -64,11 +65,11 @@ body {
 }
 @media (min-width: 787px) {
   .header nav {
-    box-shadow: 0 0 40px #2b2c68;
+    box-shadow: 0 0 40px #000000;
   }
 }
 .header nav {
-  background-color: #2b2c68;
+  background-color: #4a000e;
   backdrop-filter: blur(10px);
   transition: 0.5s;
 }
@@ -83,8 +84,8 @@ body {
   border-radius: 5px;
   top: 20px;
   right: 20px;
-  background-image: linear-gradient(-20deg, #338aca, #26b7cd);
-  box-shadow: 3px 4px 0 #4bb8fa;
+  background-color: #4a000e;
+  box-shadow: 3px 4px 0 #ff4d4d;
   padding: 16px 6px;
   transform: rotate(45deg);
 }
@@ -118,7 +119,6 @@ body {
 }
 .header nav .nav-bar ul li {
   transition: 0.5s;
-  box-shadow: 0 0 40px #2b2c68;
   width: 97%;
   padding: 10px;
   padding-left: 20px;
@@ -154,7 +154,7 @@ body {
   transition: 0.5s;
 }
 .header nav .nav-bar ul li a:hover div {
-  background-color: #00f5ff;
+  background-color: #ff4d4d;
   animation: anime 0.8s 1 ease;
   height: 3px;
   z-index: -1;
@@ -164,7 +164,7 @@ body {
   width: 90%;
 }
 .header nav .nav-bar ul li a .scroll-animation {
-  background-color: #00f5ff;
+  background-color: #ff4d4d;
   animation: anime 0.8s 1 ease;
   height: 3px;
   z-index: -1;
@@ -214,15 +214,16 @@ body {
   position: fixed;
   z-index: 11111;
   top: 20px;
-  background-color: #4bb8fa;
-  color: white;
+  background-color: #4a000e;
+  color: #ff8080;
 }
 .header .content .container .cv:hover {
-  background-color: #00f5ff;
-  color: #0f172a;
+  background-color: #ff4d4d;
+  color: #2b050c;
 }
 
 .introdaction {
+  background-color: black;
   padding: 50px 0;
 }
 .introdaction .container {
@@ -249,15 +250,15 @@ body {
 .introdaction .container .content h1 {
   position: absolute;
   top: -20px;
-  color: white;
+  color: #fff5f5;
 }
 .introdaction .container .content .box {
   position: relative;
   border-radius: 20px;
-  background-color: #4bb8fa;
+  background-color: #4a000e;
   padding: 15px;
-  color: #f8fafc;
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  color: #fff5f5;
+  border: 1px solid rgba(166, 124, 132, 0.2);
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -334,11 +335,18 @@ body {
   top: 0;
   left: 0;
   width: 90%;
-  background-color: #00f5ff;
+  background-color: #ff4d4d;
   height: 100%;
+}
+.introdaction .container .content .box.skills .skill .skill-percent {
+  border: 2px solid white;
+  border-radius: 100%;
+  padding: 10px 5px;
+  color: white;
 }
 
 .projects-page {
+  background-color: black;
   padding: 50px 0;
   overflow: hidden;
   position: relative;
@@ -377,10 +385,8 @@ body {
   gap: 1.75%;
 }
 .projects-page .container .projects .boxes .box {
-  box-shadow: #4bb8fa 0 0 25px;
-  background-color: rgba(30, 41, 59, 0.4);
   backdrop-filter: blur(8px);
-  border: 1.5px solid rgba(0, 245, 255, 0.1);
+  border: 1.5px solid rgba(255, 77, 77, 0.1);
   border-radius: 15px;
 }
 .projects-page .container .projects .boxes .box:hover .pro-img {
@@ -391,11 +397,10 @@ body {
   width: 49%;
   transition: 0.5s;
   margin-bottom: 1.75%;
-  background-color: #4bb8fa;
+  background-color: #4a000e;
   border-radius: 10px;
   overflow: hidden;
   border-radius: 20px;
-  background-color: #191834;
   color: #09fbff;
 }
 @media (max-width: 787px) {
@@ -405,6 +410,7 @@ body {
   }
 }
 .projects-page .container .projects .boxes .box .img {
+  background-color: transparent;
   padding: 10px;
   overflow: hidden;
   position: relative;
@@ -439,7 +445,7 @@ body {
 .projects-page .container .projects .boxes .box .project-infos .tools {
   margin-top: 10px;
   font-size: 12px;
-  color: rgba(248, 250, 252, 0.2);
+  color: rgba(255, 245, 245, 0.2);
   font-weight: bold;
   font-weight: 16px;
   padding: 5px 5px;
@@ -450,6 +456,9 @@ body {
   width: 40px;
 }
 
+.contact-page {
+  background-color: black;
+}
 .contact-page .container {
   width: 90%;
   height: 100vh;
@@ -480,13 +489,13 @@ body {
   border-radius: 5px;
   font-weight: bold;
   font-size: 18px;
-  background-color: rgba(30, 41, 59, 0.6);
-  border: 1px solid rgba(148, 163, 184, 0.2);
-  color: #f8fafc;
+  background-color: rgba(26, 5, 5, 0.6);
+  border: 1px solid rgba(166, 124, 132, 0.2);
+  color: #fff5f5;
 }
 .contact-page .container form input:hover,
 .contact-page .container form textarea:hover {
-  box-shadow: 0 0 10px #4bb8fa;
+  box-shadow: 0 0 10px #4a000e;
 }
 .contact-page .container form #label {
   color: white;
@@ -504,20 +513,20 @@ body {
 }
 
 .active {
-  background-color: #4bb8fa;
+  background-color: #4a000e;
   color: white;
-  box-shadow: 0 4px 0 #4bb8fa;
+  box-shadow: 0 4px 0 #4a000e;
 }
 
 .btn {
   overflow: hidden;
   position: relative;
-  background-color: #00f5ff;
+  background-color: #4a000e;
   padding: 15px 20px;
   border-radius: 5px;
-  border: 1.5px solid rgba(0, 245, 255, 0.1);
-  box-shadow: 0 0 15px rgba(0, 245, 255, 0.3);
-  color: #0f172a;
+  border: 1.5px solid rgba(255, 77, 77, 0.1);
+  box-shadow: 0 0 15px rgba(255, 77, 77, 0.3);
+  color: #fff5f5;
   overflow: hidden;
   transition: 1s;
   font-weight: bold;
@@ -534,11 +543,11 @@ body {
   transform: skew(20deg);
 }
 .btn:hover {
-  color: white;
-  background-color: #4bb8fa;
+  color: #ff8080;
+  background-color: #4a000e;
 }
 .btn:hover::after {
-  background-color: #00f5ff;
+  background-color: #ff4d4d;
   width: 50%;
   right: 150%;
 }
@@ -567,7 +576,7 @@ body {
   font-size: 60px;
   text-align: center;
   -webkit-text-stroke: 1px transparent;
-  background-image: linear-gradient(to right, #00f5ff);
+  background-image: linear-gradient(to right, #fff5f5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -580,7 +589,7 @@ body {
 .title span,
 .my-name span {
   color: white;
-  text-shadow: 0 0 5px #4bb8fa;
+  text-shadow: 0 0 5px #4a000e;
   font-weight: bold;
   font-size: 21px;
   transform: translateY(-30px);
@@ -610,28 +619,28 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #00f5ff;
+  background-color: #ff4d4d;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #4bb8fa;
+  background-color: #4a000e;
   border-radius: 20px;
 }
 
 ::-moz-selection {
-  background-color: #00f5ff;
+  background-color: #ff4d4d;
   color: white;
 }
 
 ::selection {
-  background-color: #00f5ff;
+  background-color: #ff4d4d;
   color: white;
 }
 
 .mouse {
   width: 20px;
   height: 20px;
-  background-color: #00f5ff;
+  background-color: #ff4d4d;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -640,7 +649,7 @@ body {
   border-radius: 100%;
   scroll-behavior: smooth;
   pointer-events: none;
-  box-shadow: 0 0 10px #4bb8fa;
+  box-shadow: 0 0 10px #4a000e;
 }
 
 .icon img {

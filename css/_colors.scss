@@ -1,64 +1,43 @@
-$second-color: #00f5ff;
-// $main-color : #191834;
-// $third-color:#5b146f;
-// $text-color-light: #09fbff;
-// $text-color-dark: #191834;
-// $text-color-white:white;
-$main-color: #4bb8fa;
-// $secondary-color: #00f5ff;
-$third-color: #1e293b;
-$accent-purple: #7c3aed;
+// الألوان الأساسية الجديدة (درجات الأحمر الغامق والداكن)
+$main-color:#4a000e;
 
-$text-color-light: white;
-$text-color-dark: #0f172a;
-$text-color-white: #f8fafc;
-$text-muted: #94a3b8;
+// #8b0000;   
+    // أحمر غامق (Dark Red)
+$second-color: #ff4d4d;     // أحمر فاتح للتطعيم والبراز (Accent Red)
+$third-color: #1a0505;      // أسود مائل للاحمرار داكن جداً (Very Dark Burgundy)
+$accent-purple: #4a000e;    // أحمر نبيذي داكن (Maroon)
+
+// ألوان النصوص المتناسقة مع الثيم الغامق
+$text-color-light: #ff8080;  // نص فاتح مائل للوردي/الأحمر الفاتح
+$text-color-dark: #2b050c;   // نص داكن جداً خلفيات الفاتحة
+$text-color-white: #fff5f5;  // أبيض مائل للاحمرار الخفيف جداً
+$text-muted: #a67c84;        // نص باهت (رمادي مائل للاحمرار)
+
+// مكسين التوسط
 @mixin center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+// مكسين خلفية اللاب توب (تدرج دائري من الأحمر الداكن إلى الأسود)
 @mixin bgForLaptop {
-  background-image: linear-gradient(
-    -20deg,
-    $main-color,
-    #2c5ead,
-    #1591dc,
-    #4bb8fa,
-    $main-color,
-  
+  background-image: radial-gradient(
+    circle at top right,
+    #000000,       // أسود
+  $accent-purple ,    // أحمر نبيذي غامق جداً
+   $accent-purple , 
+     #000000,    // الأحمر الغامق الأساسي
   );
+  background-attachment: fixed;
 }
+
+// مكسين خلفية الهاتف (تدرج طولي متناسق)
 @mixin bgForPhone {
-  background-image: linear-gradient(
-    -20deg,
-    $main-color,
-    #2c5ead,
-    #1591dc,
-    #4bb8fa,
-    $main-color,
+  background-image: radial-gradient(
+    180deg,
+    $accent-purple 0%,
+    #310007 50%,
+    $accent-purple 100%
   );
 }
-
-
-
-// @mixin bgForLaptop {
-//   background-image: radial-gradient(
-//     circle at top right,
-//     #1e1b4b,
-//     $main-color,
-//     #000000
-//   );
-//   background-attachment: fixed;
-// }
-
-
-// @mixin bgForPhone {
-//   background-image: linear-gradient(
-//     180deg,
-//     $main-color 0%,
-//     #1e1b4b 50%,
-//     $main-color 100%
-//   );
-// }

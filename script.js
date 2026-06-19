@@ -336,10 +336,11 @@ let skills = {
       progress: "69%",
       img: "./photo/skills&lagueges/js.png",
     },
-    // {
-    //   language: "Tailwind",
-    //   progress: "59%",
-    // },
+    {
+      language: "Angular",
+      progress: "59%",
+      img: "./photo/skills&lagueges/js.png",
+    },
   ],
 };
 
@@ -360,7 +361,7 @@ function addSkill(skill) {
           <div class="timeLine">
                 <span class="progress" style= "width:${skill.progress}"></span>
           </div>
-          <span style="background-color: #09fbff; border-radius:100% ; padding: 3px ; color:#191834">${skill.progress}</span>
+          <span class="skill-percent">${skill.progress}</span>
     
   `;
   skillcontainerDiv.innerHTML = skillContent;
